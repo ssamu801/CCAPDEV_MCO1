@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="css/register.css"> 
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+     <div class="nav-box"> 
+        <div class="nav-frame">
+            <a href="/"><img src="images/logo.png"></a>
+            <a href="/" class="website-name">PROFADVISOR</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="/about-us" class="about-us">ABOUT US</a>
+            <a href="/login.html" class="login">LOGIN</a>
+        </div>
+    </div>
+
+
+    <!-- REGISTER  -->
+    <div class="container"> 
+        <div class="reg-box">
+            <div class="reg-frame">
+                <span class="register">SIGN UP</span>
+                
+                <form id="reg-form" action="/login">
+
+                    <div class="form" id="email-div">
+                        <label for="email-test">Email</label> 
+                        <br>
+                        <input type="text" name="email" id="email-input">
+                    </div>
+
+                    <div class="form" id="reg-password-div">
+                        <label for="password">Password</label> 
+                        <br>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="form" id="button-div">
+                        <button type="submit" id="reg-button"><span class="reg-text">SIGN UP</span></button> 
+                        <br>
+                        <span class="need-acc">Already a user? <a href="/login.html">LOGIN</a></span>
+                    </div>
+                    
+                </form>
+                    
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
