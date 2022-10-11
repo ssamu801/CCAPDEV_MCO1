@@ -17,6 +17,7 @@ html,body {
     background-color: var(--ourwhite);
     flex: auto;
     left: 0px;
+    top: 0px;
     font-weight: 600;
     font-size: 32px;
     display: flex;
@@ -53,15 +54,14 @@ html,body {
     background-color: rgb(58, 175, 169);
     width:100px;
     height: 30px;
-    
-    
-  
+    font-family: 'Inter',sans-serif;
 }
 
 #logout{
     background-color: rgb(58, 175, 169);
     height: 30px;
     margin: auto;
+    font-family: 'Inter',sans-serif;;
 }
 
 #logo{
@@ -78,22 +78,30 @@ html,body {
 .postcontain{
     background-color: var(--ourwhite);
     border: 1px solid var(--darkBlue);
-    width: 100%;
+    width: 80%;
     padding-left: 20px;
     display: flex;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.username p{
+    padding-top: 25px;
+    padding-left: 5px;
 }
 
 .post-title, p{
-    font-weight: bold;
-    padding-left: 10px;
     padding-top: 10px;
-    
+    padding-left: 20px;
+    font-weight: bold;
+    font-family: 'Inter',sans-serif;
+    white-space: pre;
 }
 
 .post-content{
-    padding-top: 10px;
-    white-space: pre;
+    padding-top: 20px;
+    white-space: break-spaces;
     font-weight: lighter;
+    font-family: 'Inter', sans-serif;
 }
 
 .postcontain img{
@@ -108,13 +116,14 @@ html,body {
     border: 1px solid var(--darkBlue);
     display: flex;
     padding-left: 20px;
-    width: 100%;
+    width: 80%;
     height: 67px;
-    
+    padding-top: 5px;
 }
 .post-bar button{
-    width: 67px;
-    height: 67px;
+    width: 50px;
+    height: 50px;
     border: none;
-    padding: 2px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
