@@ -23,8 +23,9 @@ html,body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    
     margin: auto;
+    padding: 2px;
+   
 }
 
 #navbar img{
@@ -38,8 +39,8 @@ html,body {
 #navbar input[type=text]{
     
     font-size: 15px;
-    width: 600px;
-    height: 30px;
+    width: 30%;
+    height: 30%;
     margin:auto;
     left: 450px;
     
@@ -52,14 +53,14 @@ html,body {
 
 #search{
     background-color: rgb(58, 175, 169);
-    width:100px;
-    height: 30px;
+    width:80px;
+    height: 25px;
     font-family: 'Inter',sans-serif;
 }
 
 #logout{
     background-color: rgb(58, 175, 169);
-    height: 30px;
+    height: 25px;
     margin: auto;
     font-family: 'Inter',sans-serif;;
 }
@@ -78,28 +79,21 @@ html,body {
 .postcontain{
     background-color: var(--ourwhite);
     border: 1px solid var(--darkBlue);
-    width: 80%;
+    width: 60%;
     padding-left: 20px;
     display: flex;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: auto;
 }
 
-.username p{
-    padding-top: 25px;
-    padding-left: 5px;
-}
-
-.post-title, p{
-    padding-top: 10px;
-    padding-left: 20px;
+.post-head{
+    display: block;
     font-weight: bold;
-    font-family: 'Inter',sans-serif;
-    white-space: pre;
+        font-family: 'Inter', sans-serif;
 }
 
 .post-content{
-    padding-top: 20px;
-    white-space: break-spaces;
+    padding-top: 40px;
     font-weight: lighter;
     font-family: 'Inter', sans-serif;
 }
@@ -116,9 +110,10 @@ html,body {
     border: 1px solid var(--darkBlue);
     display: flex;
     padding-left: 20px;
-    width: 80%;
-    height: 67px;
+    width: 60%;
+    height: 30%;
     padding-top: 5px;
+    margin: auto;
 }
 .post-bar button{
     width: 50px;
