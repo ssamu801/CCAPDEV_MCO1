@@ -463,7 +463,7 @@ html, body {
 
 .add-review-button{
     padding: 10px 60px;
-    background: var(--semiDarkBlue);
+    background-color: var(--semiDarkBlue);
     border: 0;
     outline: none;
     cursor: pointer;
@@ -471,6 +471,10 @@ html, body {
     font-weight: 500;
     color: var(--ourwhite);
     border-radius: 30px;
+}
+
+.add-review-button:hover{
+    background-color:#2A807B;
 }
 
 .review-form-popup{
@@ -481,7 +485,6 @@ html, body {
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
     padding: 0 30px 30px;
     color: black;
     visibility: hidden;
@@ -495,11 +498,28 @@ html, body {
     transform: translate(-50%, -50%) scale(1);
 }
 
+textarea[id=text-review] {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+  
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+input[id=course-reviews] {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
 .review-form-popup button{
     width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background-color: #2b7a78;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--semiDarkBlue);
     color: white;
     border: 0;
     outline: none;
@@ -507,4 +527,8 @@ html, body {
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.review-form-popup button:hover{
+    background-color:#2A807B;
 }
