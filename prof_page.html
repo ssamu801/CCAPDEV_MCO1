@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="javascript/prof_page.js"></script>
     <link rel="stylesheet" type="text/css" media="all" href="css/prof_page.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     
@@ -70,7 +69,7 @@
                     <hr>
                     <!----------ADD REVIEW---------------------------->
                     <div class="add-review-container">
-                        <a class="add-review" href="#">Add a review</a>
+                        <button type="submit" class="add-review-button" onclick="openReviewForm()">Add a review</button>
                     </div>
                 </div>
                 <!--------------------AVERAGE STAR RATING--------------->
@@ -249,12 +248,17 @@
                         </ul>
                 
                 </section>
+                <div class="review-form-popup" id="review-form-popup">
+                    <h2>auq na beh</h2>
+                    <p>pagod na q</p>
+                    <button type="submit" onclick="closeReviewForm()">ENOUGH</button>
+                </div>
                 </div>
             </div>
         </div>
     </div>
 
-
+<script src="javascript/prof_page.js"></script>
 </body>
 
 </html>
