@@ -249,9 +249,13 @@
                 
                 </section>
                 <div class="review-form-popup" id="review-form-popup">
-                    <h2>auq na beh</h2>
-                    <p>pagod na q</p>
-                    <button type="submit" onclick="closeReviewForm()">ENOUGH</button>
+                    <h2>Write a review about this prof!</h2>
+                    <form>
+                        <textarea name="text-review" id="text-review" class="field" placeholder="Add a review..." ></textarea>
+                        <label for="text-review">Course</label><br>
+                        <input type="text" id="course-reviews" name="course-reviews" placeholder="eg. CCAPDEV">
+                        <button type="submit" onclick="closeReviewForm()">Submit review</button>
+                    </form>
                 </div>
                 </div>
             </div>
