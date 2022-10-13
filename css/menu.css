@@ -24,7 +24,7 @@ html,body {
     align-items: center;
     text-decoration: none;
     margin: auto;
-    padding: 2px;
+   padding: 5px;
    
 }
 #navbar button:hover{
@@ -88,7 +88,7 @@ html,body {
 #menucontainer{
     background-color: rgb(222, 242, 241);
     padding: 50px;
-
+    text-align: center;
 }
 
 .postcontain{
@@ -99,6 +99,7 @@ html,body {
     display: flex;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     margin:auto;
+    padding: auto;
 }
 
 .post-head{
