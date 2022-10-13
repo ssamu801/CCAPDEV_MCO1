@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="css/prof_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+
+    <title>Prof Page</title>
+
+</head>
+
+<body>
+    <!------------------NAVBAR--------------------->
+    <div class="navbar">
+        <a class="logo" href="home.html"> <img src="images/logo.png" alt="Logo"></a>
+        <a class="name" href="home.html">PROFADVISOR</a>
+        <a class="navbutton" href="settings.html">SETTINGS</a>
+        <a class="navbutton" href="home.html">SEARCH</a>
+    </div>
+
+    <!---------------MAIN CONTAINER---------------------------->    
+    <div class="container">
+        <div class="content-container">
+            <!---------------LEFT SECTION--------------------------->
+            <div class="vertical-container">
+                <section class="icon">
+                    <img src="images/icon.png">
+                </section>
+                <!------------COURSES TABLE------------------->
+                <section class="courses">
+                    <ul>
+                        <li class="header">Courses</li>
+                        <li><a class="listed-coures" href="#">CCINFOM</a></li>
+                        <li><a class="listed-coures" href="#">ITISORG</a></li>
+                        <li><a class="listed-coures" href="#">ITSYSAD</a></li>
+                        <li><a class="listed-coures" href="#">ITCMSY1</a></li>
+                    </ul>
+                </section>
+            </div>
+            <!--------------RIGHT SECTION-------------------------->
+            <div class="right-container">
+                <div class="info-container">
+                    <!-------------------PROF INFO------------------>
+                    <div class="info">
+                         <header>Prof Info:</header>
+                        <p> Name: James Razon <br>
+                            <br>CCINFOM - Information Management
+                            <br>ITISORG - Organization and Management Concepts
+                            <br>ITSYSAD - System Administration and Maintenance
+                            <br>ITCMSY1 - Introduction to Computer Platforms and Operating Systems <br><br>
+                            College Department: <br>CCS - Information Technology Department
+                            
+                        </p>
+                    </div>    
+                </div>
+                <!-------------ADD REVIEWS SECTION------------------->
+                <div class="review-box">
+                    <!-----------ADD STAR RATING------------->
+                    <div class="star-container">
+                        <p>Rate</p>
+                        <a href="#" class="star1"></a>
+                        <a href="#" class="star2"></a>
+                        <a href="#" class="star3"></a>
+                        <a href="#" class="star4"></a>
+                        <a href="#" class="star5"></a>
+                            <div class="stars">
+                            </div>
+                    </div>
+                    <hr>
+                    <!----------ADD REVIEW---------------------------->
+                    <div class="add-review-container">
+                        <button type="submit" class="add-review-button" onclick="openReviewForm()">Add a review</button>
+                    </div>
+                </div>
+                <!--------------------AVERAGE STAR RATING--------------->
+                <div class="ratings-container">
+                    <hr>
+                    <div class="ratings-content">
+                        <p>Average Rating: 4/5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp;109 users</p>
+                    </div>
+                    <div class="average-stars">
+                    </div>
+                </div>
+                <div class="reviews">
+                    <!---------------------POPULAR REVIEWS------------------------>
+                    <section class="popular-reviews">
+                        <header class="section-heading">POPULAR REVIEWS</header>
+                        <ul>
+                            <li class="review-content"> 
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">theemowtee</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p> The type of prof who will test you if you have good knowledge about his class. 
+                                            I will admit that he's a challenging prof and his exams are really hard. 
+                                            Really really hard. But I have enjoyed his class even though it was one of the hardest 
+                                            classes I have enrolled in. 4.00 is still attainable tho. Good luck but I assure you, 
+                                            you will definitely enjoy his class.</p>
+                                    </div>
+                                    <div class="review-likes">
+                                        <span class="fa-solid fa-thumbs-up"></span>
+                                        <span class="likes">71 Likes</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="review-content">
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">jellyjail</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p> Will let u learn the hard way as usual with all his subjs hehe so goodluck with him 😀 
+                                            4.0 is still attainable naman but u just rly need to be on his good side lang talaga by 
+                                            exerting lots of effort as well
+                                        </p>
+                                    </div>
+                                    <div class="review-likes">
+                                        <span class="fa-solid fa-thumbs-up"></span>
+                                        <span class="likes">65 Likes</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="review-content">
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">lost_kid</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p> you’ll learn a lot in a hard way. He’s strict esp during demos and stuff but 4.0 
+                                            is very attainable naman, arguably one of the best profs in it</p>
+                                    </div>
+                                    <div class="review-likes">
+                                        <span class="fa-solid fa-thumbs-up"></span>
+                                        <span class="likes">56 Likes</span>
+                                    </div>
+                                </div>
+                            </li>   
+                        </ul>
+                
+                    </section>
+                    <div class="divider"></div>
+                    <!--------------RECENT REVIEWS-------------------------->
+                <section class="recent-reviews">
+                           <header class="section-heading">RECENT REVIEWS</header>
+                        <ul>
+                            <li class="review-content"> 
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">__bread__</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p>he’s really knowledgeable with the lessons so he can properly explain and teach it well</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="review-content">
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">riley2345</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p>teaches very well. just make sure to study the materials well to get that 4.0</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li class="review-content">
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">https0_0</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p> kinda strict but a really good prof overall</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>   
+                        </ul>
+                
+                </section>
+                <div class="review-form-popup" id="review-form-popup">
+                    <h2>Write a review about this prof!</h2>
+                    <form>
+                        <textarea name="text-review" id="text-review" class="field" placeholder="Add a review..." ></textarea>
+                        <label for="text-review">Course</label><br>
+                        <input type="text" id="course-reviews" name="course-reviews" placeholder="eg. CCAPDEV">
+                        <button type="submit" onclick="closeReviewForm()">Submit review</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="javascript/prof_page.js"></script>
+</body>
+
+</html>

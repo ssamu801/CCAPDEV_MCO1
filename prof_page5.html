@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" media="all" href="css/prof_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+
+    <title>Prof Page</title>
+
+</head>
+
+<body>
+    <!------------------NAVBAR--------------------->
+    <div class="navbar">
+        <a class="logo" href="home.html"> <img src="images/logo.png" alt="Logo"></a>
+        <a class="name" href="home.html">PROFADVISOR</a>
+        <a class="navbutton" href="settings.html">SETTINGS</a>
+        <a class="navbutton" href="home.html">SEARCH</a>
+    </div>
+
+    <!---------------MAIN CONTAINER---------------------------->    
+    <div class="container">
+        <div class="content-container">
+            <!---------------LEFT SECTION--------------------------->
+            <div class="vertical-container">
+                <section class="icon">
+                    <img src="images/icon.png">
+                </section>
+                <!------------COURSES TABLE------------------->
+                <section class="courses">
+                    <ul>
+                        <li class="header">Courses</li>
+                        <li><a class="listed-coures" href="#">OCMRES1</a></li>
+                        <li><a class="listed-coures" href="#">CAMBROD</a></li>
+                        <li><a class="listed-coures" href="#">CAMETHC</a></li>
+                    </ul>
+                </section>
+            </div>
+            <!--------------RIGHT SECTION-------------------------->
+            <div class="right-container">
+                <div class="info-container">
+                    <!-------------------PROF INFO------------------>
+                    <div class="info">
+                         <header>Prof Info:</header>
+                        <p> Name: Yor Forger <br>
+                            <br>OCMRES1 - Quantitative Research Methods
+                            <br>CAMBROD - Theory and History: Broadcasting  
+                            <br>CAMETHC - Communication and Media Ethics <br><br>
+                            College Department: <br>CLA - Communications Department
+                            
+                        </p>
+                    </div>    
+                </div>
+                <!-------------ADD REVIEWS SECTION------------------->
+                <div class="review-box">
+                    <!-----------ADD STAR RATING------------->
+                    <div class="star-container">
+                        <p>Rate</p>
+                        <a href="#" class="star1"></a>
+                        <a href="#" class="star2"></a>
+                        <a href="#" class="star3"></a>
+                        <a href="#" class="star4"></a>
+                        <a href="#" class="star5"></a>
+                            <div class="stars">
+                            </div>
+                    </div>
+                    <hr>
+                    <!----------ADD REVIEW---------------------------->
+                    <div class="add-review-container">
+                        <button type="submit" class="add-review-button" onclick="openReviewForm()">Add a review</button>
+                    </div>
+                </div>
+                <!--------------------AVERAGE STAR RATING--------------->
+                <div class="ratings-container">
+                    <hr>
+                    <div class="ratings-content">
+                        <p>Average Rating: 4/5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp;109 users</p>
+                    </div>
+                    <div class="average-stars">
+                    </div>
+                </div>
+                <div class="reviews">
+                    <!---------------------POPULAR REVIEWS------------------------>
+                    <section class="popular-reviews">
+                        <header class="section-heading">POPULAR REVIEWS</header>
+                        <ul>
+                            <li class="review-content"> 
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">renebaebae</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p> One of the most understanding and super nice prof I've met!! her workloads are fairly easy. 
+                                            In terms of grading, she grades fairly. 
+                                        </p>
+                                    </div>
+                                    <div class="review-likes">
+                                        <span class="fa-solid fa-thumbs-up"></span>
+                                        <span class="likes">97 Likes</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="review-content">
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">_chaechae_1</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p> one of the best imo. enjoyed her class and honestly never boring 
+                                            (esp if u have a short attention span). grades fairly but curves!
+                                        </p>
+                                    </div>
+                                    <div class="review-likes">
+                                        <span class="fa-solid fa-thumbs-up"></span>
+                                        <span class="likes">86 Likes</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="review-content">
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">yerimiese</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p> a wonderful professor to have worked with. Every lecture
+                                            we had was top notch, she encouraged passion and
+                                            creativity for the subject itself, kind and bright as
+                                            well. Grades you the grade that you deserve. 🙂</p>
+                                    </div>
+                                    <div class="review-likes">
+                                        <span class="fa-solid fa-thumbs-up"></span>
+                                        <span class="likes">75 Likes</span>
+                                    </div>
+                                </div>
+                            </li>   
+                        </ul>
+                
+                    </section>
+                    <div class="divider"></div>
+                    <!--------------RECENT REVIEWS-------------------------->
+                <section class="recent-reviews">
+                           <header class="section-heading">RECENT REVIEWS</header>
+                        <ul>
+                            <li class="review-content"> 
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">jenaissante</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p>he's very kind and considerate! replies fast to emails 🤩 she uses 
+                                            peardeck for discussions din hehe quizzes are 10 items only 
+                                            (asynch + open notes) she's very insightful! and entertains 
+                                            all of ur questions 🥰 would say ez 4! </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="review-content">
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">zo__glasss</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p>chill prof! just make sure to attend her class and do the needed 
+                                            requirements like discussion board and the quizzes. 
+                                            you’ll surely get a grade of 3-4</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                            <li class="review-content">
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">silver_rain.__</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p> Super nice and considerate!! her lectures are easy 
+                                            to understand too (she teaches well but sometimes 
+                                            her mic is sad) and most of the time she sends the 
+                                            ppt!! lectures are also always recorded... 
+                                            shes strict with deadlines but if you have a valid e
+                                            xcuse shes super understanding din naman... workload was 
+                                            super manageable in my experience — she follows the 
+                                            one week to do requirements rule
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            </li>   
+                        </ul>
+                
+                </section>
+                <div class="review-form-popup" id="review-form-popup">
+                    <h2>Write a review about this prof!</h2>
+                    <form>
+                        <textarea name="text-review" id="text-review" class="field" placeholder="Add a review..." ></textarea>
+                        <label for="text-review">Course</label><br>
+                        <input type="text" id="course-reviews" name="course-reviews" placeholder="eg. CCAPDEV">
+                        <button type="submit" onclick="closeReviewForm()">Submit review</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="javascript/prof_page.js"></script>
+</body>
+
+</html>
