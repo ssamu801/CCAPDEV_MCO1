@@ -70,51 +70,84 @@ html, body {
     color: var(--ourwhite);
 }
 
-/* LOGIN */
+/* EDIT PROFILE */
 
-.container {
+.settings-container {
+    padding-top: 50px;
+    
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    height: 100%;
-    width: 100%;
+    margin: auto;
 }
 
-.reg-box {
+.settings-box {
     box-sizing: border-box;
 
-    width: 464px;
-    height: 567px;
-   
+    width: 1300px;
+    height: 814px;
+
     background: var(--ourwhite);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 
+    margin-bottom: 50px;
     display: flex;
-    padding-top: 66px;
-    padding-left: 55px;
-    padding-right: 51px;
 }
 
-.reg-frame{
+.left-box {
+    box-sizing: border-box;
+
+    width: 115px;
+    height: 783px;
+    margin-left: 21px;
+    margin-top: 14px;
+
+    background: var(--semiDarkBlue);
+    border: 3px solid #818181;
+}
+
+.profile-pic{
+    padding: 10px;
+    height: 200px;
+
     display: flex;
     flex-direction: column;
 
-    width: 100%;
+    align-items: center;
 }
 
+.profile-pic img{
+    padding-top: 20px;
+    width: 200px;
+}
 
+span.edit-profile {
+    padding-left: 31px;
+    padding-top: 55px;
 
-.form label {
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 36px;  
+    
     color: #818181;
 }
 
+span.change-pic {
+    font-weight: 300;
+    font-size: 20px;
 
-label.email-text {
-    padding-top: 35px;
-    
+    color: var(--semiDarkBlue);
+}
+
+span.change-pic:hover {
+    cursor: pointer;
+}
+
+.form label {
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    font-size: 20px;
+    color: #818181;
 }
 
 input {
@@ -128,47 +161,47 @@ input {
     border-radius: 5px;
 }
 
-span.register {
+#username-div {
+    padding-top: 133px;
+}
+
+#email-div {
+    padding-top: 45px;
+}
+
+#password-div {
+    padding-top: 30px;
+}
+
+span.change-email, span.change-password {
     font-weight: 600;
-    font-size: 32px;
-    
-    color: #818181;
-}
-
-span.reg-text {
     font-size: 24px;
-    color: var(--ourwhite);
-}
 
-span.need-acc {
-    margin-left: 90px;
-
-    align-self: center;
-    font-size: 16px;
     color: #818181;
-}
-
-#reg-form {
-    margin-top: 35px;
-}
-
-#reg-password-div {
-    margin-top: 25px;
 }
 
 #button-div {
-    margin-top: 79px;
+    padding-top: 46px;
 }
 
-#reg-button {
-    width: 353px;
-    height: 46px;
-
+#save-button {
+    width: 230px;
+    height: 35px;
+  
     background: var(--semiDarkBlue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     border: 0px;
+}
 
-    margin-bottom: 25px;
+span.button-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 
+    color: var(--ourwhite);
+}
+
+#save-button:hover {
+    cursor: pointer;
 }
