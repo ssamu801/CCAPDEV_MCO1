@@ -27,6 +27,10 @@ html,body {
     padding: 2px;
    
 }
+#navbar button:hover{
+    background-color: var(--ourwhite);
+    cursor: pointer;
+}
 
 #navbar img{
     height: 67px;
@@ -42,7 +46,9 @@ html,body {
     width: 30%;
     height: 30%;
     margin:auto;
-    left: 450px;
+    margin-left: 20%;
+    margin-right: 0px;
+    
     
     
 }
@@ -53,7 +59,7 @@ html,body {
 
 #search{
     background-color: rgb(58, 175, 169);
-    width:80px;
+   
     height: 25px;
     font-family: 'Inter',sans-serif;
 }
@@ -62,9 +68,18 @@ html,body {
     background-color: rgb(58, 175, 169);
     height: 25px;
     margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
     font-family: 'Inter',sans-serif;;
 }
 
+#settings{
+    background-color: rgb(58, 175, 169);
+    height: 25px;
+    margin: auto;
+    margin-right: 0px;
+    font-family: 'Inter',sans-serif;
+} 
 #logo{
     width: 126px;
     height: 110px;
@@ -83,42 +98,35 @@ html,body {
     padding-left: 20px;
     display: flex;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: auto;
+    margin:auto;
 }
 
 .post-head{
-    display: block;
     font-weight: bold;
-        font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
+
 }
 
 .post-content{
-    padding-top: 40px;
+    margin-left: 20%;
     font-weight: lighter;
     font-family: 'Inter', sans-serif;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    
+    
 }
-
-.postcontain img{
-    height: 67px;
-    width: 67px;
-    padding-right: 20px;
-    padding-top: 20px;
-}
-
-.post-bar{
-    background-color: var(--darkBlue);
-    border: 1px solid var(--darkBlue);
-    display: flex;
-    padding-left: 20px;
-    width: 60%;
-    height: 30%;
-    padding-top: 5px;
+.post-content p{
+    font-size: larger;
+    padding-top: 40px;
     margin: auto;
+
+    padding-left:0px ;
+    
 }
-.post-bar button{
-    width: 50px;
-    height: 50px;
-    border: none;
-    margin-top: 5px;
-    margin-left: 5px;
+
+.postcontain:hover{
+    background-color: var(--darkBlue);
+    cursor: pointer;
+    
 }
