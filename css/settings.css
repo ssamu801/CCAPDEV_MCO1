@@ -201,3 +201,7 @@ span.button-text {
 
     color: var(--ourwhite);
 }
+
+#save-button:hover {
+    cursor: pointer;
+}
