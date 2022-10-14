@@ -30,9 +30,9 @@
                 <section class="courses">
                     <ul>
                         <li class="header">Courses</li>
-                        <li><a class="listed-coures" href="#">SOCSTAT</a></li>
-                        <li><a class="listed-coures" href="#">HISTSO1</a></li>
-                        <li><a class="listed-coures" href="#">ORGABEV</a></li>
+                        <li><div class="listed-courses" onclick="openSOCSTAT()">SOCSTAT</div></li>
+                        <li><div class="listed-courses" onclick="openHISTSO1()">HISTSO1</div></li>
+                        <li><div class="listed-courses" onclick="openORGABEV()">ORGABEV</div></li>
                     </ul>
                 </section>
             </div>
@@ -254,6 +254,7 @@
                         </ul>
                 
                 </section>
+                <!--------REVIEW FORM POPUP-------------->
                 <div class="review-form-popup" id="review-form-popup">
                     <h2>Write a review about this prof!</h2>
                     <form>
@@ -263,6 +264,172 @@
                         <button type="submit" onclick="closeReviewForm()">Submit review</button>
                     </form>
                 </div>
+                <!----------REVIEWS PER COURSE------------------------------>
+                <div class="listed-courses-reviews" id="listed-course1">
+                    <ul>
+                        <h2>SOCSTAT</h2>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">akarifan</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p>he is supper approachable and motherly. She will help and attend to you if you 
+                                        needed something. She’s a great teacher that cares about her students. You 
+                                        will learn something from her.She had exams and discussion forums that you need to 
+                                        participate. Very considerate.</p>
+                                </div>
+                            </div>
+                    </li>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">theehoe</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p>Very kind and youll really get to learn</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="closeSOCSTAT()">Close</button>
+                </div>
+
+                <div class="listed-courses-reviews" id="listed-course2">
+                    <h2>HISTSO1</h2>
+                    <ul>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">nomnom</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p>Super duper light workload (as in 2 individual works + 2 group works + 
+                                        1 final presentation lang) and as long as you submit quality work, she 
+                                        gives super high scores!! Also so incredibly passionate in teaching the subject 
+                                        to the point that her enthusiasm spills over to her students. You’ll really learn 
+                                        so much from her class 🥰 got a 4.0 from her!!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">random8765</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p> Such a motherly person huhu super chill class + 
+                                        minimal workload also very kind when u recite !! 
+                                        Had one group work and a few papers lang</p>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="closeHISTSO1()">Close</button>
+                </div>
+
+                <div class="listed-courses-reviews" id="listed-course3">
+                    <h2>ORGABEV</h2>
+                    <ul>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">red_801</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p>Loved her classes! She’s passionate sa work niya and also 
+                                        very organized with assignments and Canvas modules! She 
+                                        grades fairly high as long as you pass everything and 
+                                        exert effort in her class.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">fmr321</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p> She’s considerate with deadlines, requirements and schedule. She’s super 
+                                        friendly and energetic — if you have her as a morning class you’ll enjoy it 
+                                        pa din HAHAHA super energetic niya and cheers up the class din. Replies to 
+                                        emails :”) vv attainable 3-4 as you participate and do well in reqs!</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="closeORGABEV()">Close</button>
+                </div>
+
                 </div>
             </div>
         </div>
