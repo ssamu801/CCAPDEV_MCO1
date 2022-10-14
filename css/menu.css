@@ -46,7 +46,7 @@ html,body {
     width: 30%;
     height: 30%;
     margin:auto;
-    margin-left: 20%;
+    margin-left: 15%;
     margin-right: 0px;
     
     
@@ -59,19 +59,12 @@ html,body {
 
 #search{
     background-color: rgb(58, 175, 169);
-   
+    margin-right: 5%;
     height: 25px;
     font-family: 'Inter',sans-serif;
 }
 
-#logout{
-    background-color: rgb(58, 175, 169);
-    height: 25px;
-    margin: auto;
-    margin-left: 0px;
-    margin-right: 0px;
-    font-family: 'Inter',sans-serif;;
-}
+
 
 #navbar a.navbutton {
     color: black;
