@@ -30,10 +30,10 @@
                 <section class="courses">
                     <ul>
                         <li class="header">Courses</li>
-                        <li><a class="listed-coures" href="#">ITNET01</a></li>
-                        <li><a class="listed-coures" href="#">ITNET02</a></li>
-                        <li><a class="listed-coures" href="#">ITNET03</a></li>
-                        <li><a class="listed-coures" href="#">ITNET04</a></li>
+                        <li><div class="listed-courses" onclick="openITNET01()">ITNET01</div></li>
+                        <li><div class="listed-courses" onclick="openITNET02()">ITNET02</div></li>
+                        <li><div class="listed-courses" onclick="openITNET03()">ITNET03</div></li>
+                        <li><div class="listed-courses" onclick="openITNET04()">ITNET04</div></li>
                     </ul>
                 </section>
             </div>
@@ -245,6 +245,7 @@
                         </ul>
                 
                 </section>
+                <!--------REVIEW FORM POPUP-------------->
                 <div class="review-form-popup" id="review-form-popup">
                     <h2>Write a review about this prof!</h2>
                     <form>
@@ -253,6 +254,169 @@
                         <input type="text" id="course-reviews" name="course-reviews" placeholder="eg. CCAPDEV">
                         <button type="submit" onclick="closeReviewForm()">Submit review</button>
                     </form>
+                </div>
+                <!----------REVIEWS PER COURSE------------------------------>
+                <div class="listed-courses-reviews" id="listed-course1">
+                    <h2>ITNET01</h2> 
+                        <ul>
+                            <li>
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">strwrv</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p>Very amazing prof and very approachable :-)</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">mayo021</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p>mabait din sya magaling magturo same need to work for your grades 
+                                            does not check hws kasi alam nya magkokopyahan lg ineencourage lg 
+                                            nya kau maganswer mag isa para matuto and ask if d mo nagets =))</p>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                        <button type="button" onclick="closeITNET01()">Close</button>
+                </div>
+
+                <div class="listed-courses-reviews" id="listed-course2">
+                    <h2>ITNET02</h2>
+                    <ul>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">ksgiglues</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p> magaling magturo at mabait pero strict sa grades ^^</p>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">DLSU123</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p> Really lenient when it comes to deadlines kasi due lahat ng requirements 
+                                        at the end of the term. May recitation siya during class thats part of your grade. 
+                                        Teaching style is ok. She explains the concepts very well with examples.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="closeITNET02()">Close</button>
+                </div>
+                
+                <div class="listed-courses-reviews" id="listed-course3">
+                    <h2>ITNET03</h2>
+                        <ul>
+                            <li>
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">eske</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p> the best, activities and grading wise she's fair, you'll 
+                                            learn a lot and she's really enthusiastic when teaching </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    <button type="button" onclick="closeITNET03()">Close</button>  
+                </div>
+
+                <div class="listed-courses-reviews" id="listed-course4">
+                    <h2>ITNET04</h2>
+                        <ul>
+                            <li>
+                                <div class="review-container">
+                                    <div class="user-icon">
+                                        <img src="images/icon.png">
+                                    </div>
+                                    <div class="name">
+                                        <span>Review by</span>
+                                        <p class="username">rnrnslsl</p>
+                                    </div>
+                                    <div class="user-rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="user-review">
+                                        <p> exact, concise, and will ensure that you get the lesson 
+                                            (just make sure to ask when you don't understand).</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    <button type="button" onclick="closeITNET04()">Close</button>   
                 </div>
                 </div>
             </div>
