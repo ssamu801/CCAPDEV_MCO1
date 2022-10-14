@@ -73,13 +73,22 @@ html,body {
     font-family: 'Inter',sans-serif;;
 }
 
-#settings{
-    background-color: rgb(58, 175, 169);
-    height: 25px;
+#navbar a.navbutton {
+    color: black;
+    padding: 30px 5px;
+   text-decoration: none;
+    font-size: 25px;
+    margin-right: 0%;
     margin: auto;
-    margin-right: 0px;
-    font-family: 'Inter',sans-serif;
-} 
+    
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+#navbar a.navbutton:hover {
+    background-color: var(--semiDarkBlue);
+    color: white;
+}
+
 #logo{
     width: 126px;
     height: 110px;
