@@ -30,9 +30,9 @@
                 <section class="courses">
                     <ul>
                         <li class="header">Courses</li>
-                        <li><a class="listed-coures" href="#">OCMRES1</a></li>
-                        <li><a class="listed-coures" href="#">CAMBROD</a></li>
-                        <li><a class="listed-coures" href="#">CAMETHC</a></li>
+                        <li><div class="listed-courses" onclick="openOCMRES1()">OCMRES1</div></li>
+                        <li><div class="listed-courses" onclick="openCAMBROD()">CAMBROD</div></li>
+                        <li><div class="listed-courses" onclick="openCAMETHC()">CAMETHC</div></li>
                     </ul>
                 </section>
             </div>
@@ -192,7 +192,7 @@
                                         <span class="fa fa-star"></span>
                                     </div>
                                     <div class="user-review">
-                                        <p>he's very kind and considerate! replies fast to emails 🤩 she uses 
+                                        <p>she's very kind and considerate! replies fast to emails 🤩 she uses 
                                             peardeck for discussions din hehe quizzes are 10 items only 
                                             (asynch + open notes) she's very insightful! and entertains 
                                             all of ur questions 🥰 would say ez 4! </p>
@@ -256,6 +256,7 @@
                         </ul>
                 
                 </section>
+                <!--------REVIEW FORM POPUP-------------->
                 <div class="review-form-popup" id="review-form-popup">
                     <h2>Write a review about this prof!</h2>
                     <form>
@@ -264,6 +265,174 @@
                         <input type="text" id="course-reviews" name="course-reviews" placeholder="eg. CCAPDEV">
                         <button type="submit" onclick="closeReviewForm()">Submit review</button>
                     </form>
+                </div>
+                <!----------REVIEWS PER COURSE------------------------------>
+                <div class="listed-courses-reviews" id="listed-course1">
+                    <ul>
+                        <h2>OCMRES1</h2>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">renebaebae</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p>One of the most understanding and super nice prof I've met!! her workloads are fairly easy. 
+                                        In terms of grading, she grades fairly. </p>
+                                </div>
+                            </div>
+                    </li>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">jenaissante</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p>she's very kind and considerate! replies fast to emails 🤩 she uses 
+                                        peardeck for discussions din hehe quizzes are 10 items only 
+                                        (asynch + open notes) she's very insightful! and entertains 
+                                        all of ur questions 🥰 would say ez 4!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="closeOCMRES1()">Close</button>
+                </div>
+
+                <div class="listed-courses-reviews" id="listed-course2">
+                    <h2>CAMBROD</h2>
+                    <ul>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">_chaechae_1</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p>one of the best imo. enjoyed her class and honestly never boring 
+                                        (esp if u have a short attention span). grades fairly but curves!
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">zo__glasss</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p> chill prof! just make sure to attend her class and do the needed 
+                                        requirements like discussion board and the quizzes. 
+                                        you’ll surely get a grade of 3-4</p>
+                                </div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="closeCAMBROD()">Close</button>
+                </div>
+
+                <div class="listed-courses-reviews" id="listed-course3">
+                    <h2>CAMETHC</h2>
+                    <ul>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">yerimiese</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p>a wonderful professor to have worked with. Every lecture
+                                        we had was top notch, she encouraged passion and
+                                        creativity for the subject itself, kind and bright as
+                                        well. Grades you the grade that you deserve. 🙂
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-container">
+                                <div class="user-icon">
+                                    <img src="images/icon.png">
+                                </div>
+                                <div class="name">
+                                    <span>Review by</span>
+                                    <p class="username">silver_rain.__</p>
+                                </div>
+                                <div class="user-rating">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </div>
+                                <div class="user-review">
+                                    <p>Super nice and considerate!! her lectures are easy 
+                                        to understand too (she teaches well but sometimes 
+                                        her mic is sad) and most of the time she sends the 
+                                        ppt!! lectures are also always recorded... 
+                                        shes strict with deadlines but if you have a valid e
+                                        xcuse shes super understanding din naman... workload was 
+                                        super manageable in my experience — she follows the 
+                                        one week to do requirements rule</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" onclick="closeORGABEV()">Close</button>
                 </div>
                 </div>
             </div>
